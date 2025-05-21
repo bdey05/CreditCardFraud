@@ -1,1 +1,1 @@
-MLOps Project to Detect Fraudulent Credit Card Purchases
+Web application created with Streamlit that communicates with a Flask API that serves an ML model that detects fraudulent credit card purchase and uses Dagster for data orchestration 
