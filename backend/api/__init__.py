@@ -10,11 +10,11 @@ def create_app(config_class=Config):
 
     db.init_app(app)
 
-    with app.app_context():
+    '''with app.app_context():
         try:
             db.create_all()
         except:
-            app.logger.error('Failed to create database tables')
+            app.logger.error('Failed to create database tables')'''
 
     from api.predict import bp 
 
