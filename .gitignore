@@ -114,3 +114,5 @@ poetry.toml
 pyrightconfig.json
 
 data
+
+*.ipynb 

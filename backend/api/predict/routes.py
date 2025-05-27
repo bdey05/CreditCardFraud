@@ -1,5 +1,6 @@
-from api.predict import bp 
+from api.predict import bp
 
-@bp.route('/predict')
+
+@bp.route("/predict")
 def predict() -> str:
-    return '<h2>Predict Route</h2>'
+    return "<h2>Predict Route</h2>"
