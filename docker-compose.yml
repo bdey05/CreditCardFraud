@@ -16,4 +16,12 @@ services:
       - db 
     ports: 
       - "5000:5000"
+  streamlit:
+    build:
+      context: . 
+      dockerfile: ./streamlit_app/Dockerfile 
+    volumes: 
+      - ./streamlit_app:/usr/src/app 
+    ports:
+      - "8501:8501"
     

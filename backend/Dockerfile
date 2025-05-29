@@ -1,10 +1,14 @@
 FROM python:3.11-slim 
 
+RUN apt-get update && \
+    apt-get install -y git && \
+    rm -rf /var/lib/apt/lists/*
+
 WORKDIR /usr/src/app 
 
 COPY requirements.txt ./requirements.txt 
 
-RUN pip install -r requirements.txt 
+RUN GIT_TERMINAL_PROMPT=0 pip install -r requirements.txt 
 
 COPY ./backend/ . 
 
