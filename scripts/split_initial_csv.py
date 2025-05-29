@@ -5,8 +5,8 @@ import pandas as pd
 def split_csv() -> None:
     """
     Creates four different CSV files from the original dataset CSV file:
-        1 initial CSV file that will be used for model training/validation/testing
-        2 CSV files that will be used as additional training data for the model (i.e. re-trigger model training)
+        1 initial CSV file that will be used for main model training/validation/testing
+        2 CSV files that will be used as additional training data for the model 
         1 CSV file that will be passed to the final model for predicting
     """
     # Reads in the original dataset and ensures they are ordered by time elapsed since first transaction
